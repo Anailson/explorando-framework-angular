@@ -2,8 +2,5 @@
 
 </app-nova-transferencia>
 
-<app-extrato></app-extrato>
-
-<p>Valor: {{ transferencia?.valor }}</p>
-<p>Destino: {{ transferencia?.destino}} </p>
+<app-extrato [transferencia]="transferencia"></app-extrato>
 
