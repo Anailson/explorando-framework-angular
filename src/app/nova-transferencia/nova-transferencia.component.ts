@@ -9,8 +9,8 @@ export class NovaTransferenciaComponent implements OnInit {
 
  @Output() aoTransferir = new EventEmitter<any>();
 
-  valor: number = 22;
-  destino: number = 222;
+  valor: number ;
+  destino: number ;
 
   constructor() {}
 
