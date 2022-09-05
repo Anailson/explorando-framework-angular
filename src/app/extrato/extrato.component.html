@@ -6,7 +6,7 @@
     <th class="tabela__cabecalho__conteudo">Valor</th>
     <th class="tabela__cabecalho__conteudo">Destino</th>
    </thead>
-   <tbody>
+   <tbody *ngIf="transferencia?.length > 0 ; else listaVazia">
     <tr class="tabela__linha" *ngFor="let transferenciaNova of transferencia">
        <td class="tabela__conteudo">{{transferenciaNova.data | date:"short"}}</td>
        <td class="tabela__conteudo">{{transferenciaNova.valor | currency}}</td>
@@ -14,4 +14,7 @@
     </tr>
    </tbody>
 </table>
+<ng-template #listaVazia>
+  <p>Nenhuma transferência cadastrada</p>
+</ng-template>
 
