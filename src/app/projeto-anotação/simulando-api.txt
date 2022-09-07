@@ -1,0 +1,7 @@
+https://github.com/alura-cursos/1952-angular/blob/aula-6/dados/db.json
+
+https://github.com/typicode/json-server
+
+
+
+SIMULANDO - API REST
