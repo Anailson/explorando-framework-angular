@@ -13,9 +13,4 @@ export class AppComponent {
 
   }
 
-  transferir($event){
-    this.service.adicionarNovaTransferencia($event);
-    console.log($event);
-
-  }
 }
